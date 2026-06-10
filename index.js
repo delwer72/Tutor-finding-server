@@ -1000,6 +1000,26 @@ app.get("/tutors", async (req, res) => {
   res.send(tutors);
 });
 
+
+
+  // JWT creation
+
+const jwt = require("jsonwebtoken");
+
+app.post("/jwt", (req, res) => {
+  const user = req.body;
+
+  const token = jwt.sign(
+    user,
+    process.env.JWT_SECRET,
+    {
+      expiresIn: "7d",
+    }
+  );
+
+  res.send({ token });
+});
+
 // =======================
 // GET ALL TUTORS
 // =======================
