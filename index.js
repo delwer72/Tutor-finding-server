@@ -207,7 +207,6 @@ app.delete("/tutors/:id", async (req, res) => {
   }
 });
 
-// =======================
 // CREATE BOOKING (FIXED LOGIC)
 // =======================
 app.post("/bookings", async (req, res) => {
@@ -293,7 +292,7 @@ app.post("/bookings", async (req, res) => {
   }
 });
 
-// =======================
+
 // GET BOOKINGS
 // =======================
 app.get("/bookings/:email", async (req, res) => {
@@ -311,7 +310,7 @@ app.get("/bookings/:email", async (req, res) => {
   }
 });
 
-// =======================
+
 // UPDATE BOOKING STATUS
 // =======================
 app.patch("/bookings/:id", async (req, res) => {
@@ -333,7 +332,7 @@ app.patch("/bookings/:id", async (req, res) => {
   }
 });
 
-// =======================
+
 // DELETE BOOKING + RESTORE SLOT
 // =======================
 app.delete("/bookings/:id", async (req, res) => {
