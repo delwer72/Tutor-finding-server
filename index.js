@@ -294,7 +294,7 @@ app.post("/bookings", async (req, res) => {
 
 
 // GET BOOKINGS
-// =======================
+
 app.get("/bookings/:email", async (req, res) => {
   try {
     const email = req.params.email;
@@ -312,7 +312,7 @@ app.get("/bookings/:email", async (req, res) => {
 
 
 // UPDATE BOOKING STATUS
-// =======================
+
 app.patch("/bookings/:id", async (req, res) => {
   try {
     const id = req.params.id;
@@ -334,7 +334,7 @@ app.patch("/bookings/:id", async (req, res) => {
 
 
 // DELETE BOOKING + RESTORE SLOT
-// =======================
+
 app.delete("/bookings/:id", async (req, res) => {
   try {
     const id = req.params.id;
